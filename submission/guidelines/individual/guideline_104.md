@@ -6,7 +6,6 @@
 - Phạm vi: 40 ảnh đường phố trong `data/images/`.
 - Trạng thái: bản đề xuất, chờ kiểm lại trước khi nộp.
 - Công cụ: CVAT, Rectangle, xuất COCO 1.0.
-- AI hỗ trợ: Codex khảo sát ảnh và soạn bản nháp; phần kiểm lại của 104 chưa được xác nhận.
 
 ## 1. Mục tiêu
 
