@@ -1,24 +1,24 @@
-# Guideline gán nhãn — đề xuất sau khảo sát — 104
+# Guideline cá nhân — 104
 
 - Phiên bản: proposal-104-v1
-- Ngày khảo sát: 2026-11-16
-- Mã thành viên nhận bản đề xuất: 104
-- Khảo sát và soạn đề xuất: Codex (AI), theo yêu cầu của 104.
-- Phạm vi: xem tổng quan 40/40 ảnh; mở lớn thêm các ca khó. Chưa rà từng đối tượng để vẽ box.
-- Trạng thái: đề xuất có AI hỗ trợ, chờ 104 kiểm lại và xác nhận; không thay cho bằng chứng khảo sát độc lập của 104.
-- Công cụ dự kiến: CVAT, Rectangle, xuất COCO 1.0.
+- Ngày cập nhật: 2026-11-16
+- Mã thành viên: 104
+- Phạm vi: 40 ảnh đường phố trong `data/images/`.
+- Trạng thái: bản đề xuất, chờ kiểm lại trước khi nộp.
+- Công cụ: CVAT, Rectangle, xuất COCO 1.0.
+- AI hỗ trợ: Codex khảo sát ảnh và soạn bản nháp; phần kiểm lại của 104 chưa được xác nhận.
 
 ## 1. Mục tiêu
 
-Nhãn phục vụ mô hình phát hiện người thật và phương tiện cơ giới trong cảnh đường phố 2D. Phạm vi đề xuất gồm người, ô tô con, xe tải/bán tải, van, xe buýt, xe máy và tuk-tuk. Xe đạp/xích lô không động cơ ngoài phạm vi phương tiện, nhưng người sử dụng chúng vẫn thuộc `person`.
+Tôi đề xuất gán nhãn người thật và phương tiện cơ giới trong cảnh đường phố 2D. Phạm vi gồm người, ô tô con, xe tải/bán tải, van, xe buýt, xe máy và tuk-tuk. Xe đạp/xích lô không động cơ ngoài phạm vi phương tiện, nhưng người sử dụng chúng vẫn thuộc `person`.
 
-Bỏ sót người làm thiếu mẫu quan trọng; gộp người và xe làm sai ranh giới lớp; gán tượng như vật thật làm nhiễu dữ liệu. Bộ 40 ảnh phục vụ thực hành, chưa đủ chứng minh dữ liệu đại diện cho triển khai giao thông thực tế. Đây là một phương án thiết kế để nhóm thảo luận, không phải đáp án chính thức của coach.
+Bỏ sót người làm thiếu mẫu quan trọng; gộp người và xe làm sai ranh giới lớp; gán tượng như vật thật làm nhiễu dữ liệu. Bộ 40 ảnh phục vụ thực hành, chưa đủ chứng minh dữ liệu đại diện cho triển khai giao thông thực tế. Các lựa chọn về phạm vi và quy tắc trong bản này sẽ được đưa ra thảo luận khi nhóm thống nhất guideline.
 
 ## 2. Lớp và thuộc tính
 
 ### 2.1. Taxonomy đề xuất
 
-Mỗi đối tượng thuộc một lớp. Bổ sung `bus`, `tuk_tuk` so với v0. Chưa sửa taxonomy chung; chỉ đồng bộ sau buổi thống nhất Pha 2.
+Mỗi đối tượng thuộc một lớp. Tôi đề xuất bổ sung `bus` và `tuk_tuk` so với v0 để tránh gán xe buýt thành van hoặc tuk-tuk thành xe máy. Taxonomy chung sẽ được cập nhật sau khi nhóm thống nhất ở Pha 2.
 
 | Lớp | Định nghĩa | Ví dụ quan sát | Phản ví dụ / dễ nhầm |
 |---|---|---|---|
@@ -35,7 +35,7 @@ Xe đạp/xích lô không động cơ, động vật, hàng rời và vật mô
 
 ### 2.2. Thuộc tính
 
-Các mức dưới đây là quy ước đề xuất để 104 thử và nhóm thảo luận, không phải ngưỡng che khuất bắt buộc của lab.
+Tôi đề xuất chia mức che khuất theo các khoảng dưới đây để hạn chế cách hiểu khác nhau về “che ít” và “che nhiều”. Nhóm cần thử lại trên ảnh trước khi khóa v1.0.
 
 | Thuộc tính | Giá trị | Nghĩa |
 |---|---|---|
@@ -104,7 +104,7 @@ Vẽ được box nhưng chưa chắc: dùng lớp/thuộc tính tạm và can_r
 
 ## 4. Khảo sát 40 ảnh và ca khó
 
-Bảng là quan sát/hướng xử lý đề xuất của AI, chưa phải COCO, tổng số box hoặc quyết định calibration của nhóm. Ca ghi review chưa được coi là đã xử lý.
+Bảng dưới tổng hợp tình huống và cách xử lý đề xuất cho từng ảnh. Các ca chưa đủ bằng chứng được giữ ở trạng thái cần review. Bảng này phục vụ viết guideline, chưa xác nhận tổng số box hay kết quả calibration.
 
 | Ảnh | Quan sát | Rule ID | Đề xuất và lý do |
 |---|---|---|---|
@@ -149,7 +149,7 @@ Bảng là quan sát/hướng xử lý đề xuất của AI, chưa phải COCO,
 | `img_039.jpg` | Xe máy, người đi bộ và người đi xe đạp | R-03, R-08, R-11 | Person vẫn xét; xe đạp ngoài phạm vi; vật xa cần đo/kiểm |
 | `img_040.jpg` | Người trên xe tiền cảnh, taxi, tuk-tuk và bus nền | R-03, R-05, R-06, R-11 | Tách người/xe; taxi là car; tuk_tuk/bus riêng; phân biệt che/cắt |
 
-Ưu tiên xác nhận: phạm vi loại xe đạp/xích lô; mức che khuất; tiêu chí ignore đám đông; ego ở img_012; xe đặc biệt img_019 và thân xe img_024. Ba ca review sau cùng cần người kiểm/bằng chứng, không được coi là đã chốt.
+Các điểm tôi đề xuất đưa ra họp nhóm trước: phạm vi xe đạp/xích lô, mức che khuất và tiêu chí ignore đám đông. Riêng `img_012`, `img_019` và `img_024` cần kiểm thêm bằng chứng về xe chủ, xe đặc biệt và thân xe rời trước khi chốt.
 
 ## 5. QC và phiên bản
 
@@ -169,11 +169,11 @@ Không có cặp thì IAA là N/A. Box chưa ghép đọc riêng; hai người c
 
 ### Trách nhiệm và lịch sử
 
-104 kiểm lại đề xuất trước khi nhận làm bản cá nhân. Người chốt nhóm/reviewer chưa được chỉ định ở đây. Giữ nguyên bản cá nhân sau khi nộp; tạo v1.0 nhóm riêng sau buổi họp. Lượt gán độc lập dùng v1.0 đã khóa, không tự đổi quy tắc hoặc xem nhãn bạn khác.
+Bản đề xuất cần được kiểm lại trước khi nộp. Sau khi nộp, giữ nguyên guideline cá nhân để đối chiếu với v1.0 của nhóm. Lượt gán độc lập dùng v1.0 đã khóa, không tự đổi quy tắc hoặc xem nhãn của thành viên khác. Người chốt và reviewer sẽ được phân công trong hồ sơ nhóm.
 
 Đổi nghĩa cách chọn vật/lớp/box/thuộc tính ở Pha 5 là semantic, phải rà cả lô theo workflow. Ca thực tế cần người chốt, rule, phạm vi, vết sửa và người kiểm lại thật; tài liệu này chưa ghi nhận các hoạt động đó.
 
 | Phiên bản | Thay đổi | Cơ sở |
 |---|---|---|
 | draft-104 | Khung từ v0 và câu hỏi cần chốt | Bản nháp trước khảo sát |
-| proposal-104-v1 | Học viên khảo sát 40 ảnh, đề xuất 8 lớp, R-01 đến R-12, bảng từng ảnh | Quan sát data/images, mở lớn ca khó; chờ 104 xác nhận |
+| proposal-104-v1 | Bổ sung đề xuất 8 lớp, R-01 đến R-12 và bảng tình huống 40 ảnh; chỉnh cách trình bày thành ghi chú cá nhân | Khảo sát và bản nháp có AI hỗ trợ như khai báo đầu tài liệu; chờ kiểm lại |
