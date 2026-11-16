@@ -177,5 +177,3 @@ Không có cặp thì IAA là N/A. Box chưa ghép đọc riêng; hai người c
 |---|---|---|
 | draft-104 | Khung từ v0 và câu hỏi cần chốt | Bản nháp trước khảo sát |
 | proposal-104-v1 | AI khảo sát 40 ảnh, đề xuất 8 lớp, R-01 đến R-12, bảng từng ảnh | Quan sát data/images, mở lớn ca khó; chờ 104 xác nhận |
-
-Khai báo AI: Codex hỗ trợ xem ảnh, đề xuất quy tắc và soạn văn bản theo yêu cầu. 104 ghi cách kiểm lại thực tế trong ghi chú cá nhân; không ghi đã tự khảo sát/đã xác nhận khi chưa làm.
