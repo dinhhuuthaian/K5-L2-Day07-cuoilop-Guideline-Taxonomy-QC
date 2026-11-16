@@ -101,52 +101,25 @@ Xe đạp/xích lô không động cơ ở `img_006`, `img_023`, `img_029`, `img
 
 Vẽ được box nhưng chưa chắc: dùng lớp/thuộc tính tạm và can_review=true kèm lý do. Chưa vẽ/nhận diện được: ghi tên ảnh, vùng và vấn đề để nhóm tổng hợp `image_issues.csv` sau khi khóa nhãn độc lập. Vùng mờ `img_014`, `img_015` chỉ gán khi nhận diện được vật và biên chính; không kéo box theo toàn bộ vệt sáng mờ. Chưa rõ biên thì review, không tự đổi occluded_level vì mờ.
 
-## 4. Khảo sát 40 ảnh và ca khó
+## 4. Ca khó
 
-Bảng dưới tổng hợp tình huống và cách xử lý đề xuất cho từng ảnh. Các ca chưa đủ bằng chứng được giữ ở trạng thái cần review. Bảng này phục vụ viết guideline, chưa xác nhận tổng số box hay kết quả calibration.
+Các ca dưới đây được chọn vì v0 chưa có quy tắc rõ hoặc dễ dẫn đến cách gán khác nhau. Ca chưa đủ bằng chứng được giữ ở trạng thái cần review.
 
-| Ảnh | Quan sát | Rule ID | Đề xuất và lý do |
+| Ảnh | Tình huống khó | Rule ID | Đề xuất và lý do |
 |---|---|---|---|
-| `img_001.jpg` | Bán tải cạnh quán, người bị bàn/xe chắn | R-01, R-05, R-11 | Truck cho bán tải; người riêng theo phần nhìn thấy, không bao cả bàn |
 | `img_002.jpg` | Xe chở nhiều ô tô hai tầng | R-02, R-04 | Truck cho xe vận chuyển; car riêng cho từng xe được chở, kể cả xe khuất nhận diện được |
-| `img_003.jpg` | Người bán hàng, người đi xe, xe đạp và gánh hàng | R-01, R-03, R-11 | Tách người/xe; không kéo box người theo gánh; xe đạp ngoài phạm vi |
-| `img_004.jpg` | Hai tuk-tuk xanh đỗ cạnh nhau | R-02, R-11 | Hai instance tuk_tuk riêng; người trong cabin chỉ gán nếu nhìn thấy thật |
 | `img_005.jpg` | Người/xe máy chồng lấp trước van bạc, cắt mép | R-03, R-05, R-06 | Tách từng người và xe; không suy số xe từ số đầu người; phân biệt che/cắt |
-| `img_006.jpg` | Xe máy và xe đạp cùng đường | R-03, R-11 | Xe máy trong phạm vi, xe đạp ngoài; người sử dụng cả hai vẫn xét |
-| `img_007.jpg` | Bán tải và xe tải thùng trong khu mái che | R-05, R-11 | Cả hai truck; đỗ trong nhà không phải lý do loại |
-| `img_008.jpg` | Người và xe máy đỗ dày ban đêm | R-02, R-03, R-09 | Xe không người vẫn gán; giữ instance rõ, ignore chỉ cụm đủ điều kiện |
-| `img_009.jpg` | Xe chở khách dài trước dãy nhà | R-11 | Bus riêng, không nhập van; người/xe nền xét riêng |
-| `img_010.jpg` | Người bán hàng, người ngồi xe và hàng hóa | R-01, R-03 | Tách người và xe; hàng/quầy không quyết định biên người |
-| `img_011.jpg` | Điêu khắc lớn và người thật ở khu phía sau | R-07, R-08 | Loại tượng; xét người thật, đo người nhỏ ở ảnh gốc |
 | `img_012.jpg` | Thùng bán tải chứa hàng sát máy ảnh | R-04, R-10, R-12 | Không bao hàng theo truck; review xe có phải ego, chưa tự loại |
-| `img_013.jpg` | Phố đêm, người/xe ở xa | R-08, R-12 | Đo vật nhỏ trên ảnh gốc; thiếu sáng không tự là ngoài phạm vi |
 | `img_014.jpg` | Hai người rõ, xe/người nền mờ mạnh | R-05, R-12 | Người rõ gán bình thường; vùng mờ review khi thiếu biên, mờ không phải che |
-| `img_015.jpg` | Xe cắt hai mép, xe chạy mờ và phản chiếu đường ướt | R-06, R-07, R-12 | Truncated cho xe cắt mép; loại phản chiếu; review biên xe mờ |
-| `img_016.jpg` | Tuk-tuk, xe máy, van và người sát mép | R-03, R-06, R-11 | Phân lớp theo kết cấu, tách người/xe; xét cắt mép từng vật |
 | `img_017.jpg` | Tượng người cưỡi ngựa | R-07 | Loại người trên tượng khỏi person; ca loại có quy tắc |
-| `img_018.jpg` | Chân dung biển quảng cáo, xe thật sau hàng rào | R-05, R-07 | Loại chân dung; xe thật vẫn xét theo phần nhìn thấy |
 | `img_019.jpg` | Xe diễu hành vàng, người lái, nhân vật trang trí, khán giả | R-03, R-07, R-09, R-12 | Đề xuất car cho xe thật, review nếu cấu trúc chưa chắc; người lái riêng; loại nhân vật trang trí |
 | `img_020.jpg` | Gương chiếu hậu, phản chiếu đường và phần xe sát máy | R-07, R-10 | Loại phản chiếu và ego; không tạo xe chỉ từ hình trong gương |
 | `img_021.jpg` | Dòng người/xe máy rất đông, xa nhỏ | R-03, R-08, R-09 | Tách tiền cảnh; nền đo/ignore cục bộ, không phủ toàn dòng xe |
 | `img_022.jpg` | Mô tô sidecar trong ảnh đen trắng | R-04, R-05 | Một motorcycle gồm thùng bên hông; người xét bằng dấu vết trực tiếp, không suy từ ghế |
-| `img_023.jpg` | Người đạp xích lô, xe con và xe khác | R-03, R-11 | Person cho người đạp; loại xích lô; car cho xe con |
 | `img_024.jpg` | Xe trưng bày, thân xe vàng trên nóc xe đen | R-04, R-12 | Xe thật rõ là car; vật vàng review tính hoàn chỉnh/thân vỏ, không suy khả năng vận hành |
-| `img_025.jpg` | Lối đi ven biển, người xa và xe bên đường | R-08 | Xét vật thuộc phạm vi, đo chiều cao trước khi ignore |
-| `img_026.jpg` | Hai người trên một xe máy, phần dưới xe bị cắt | R-03, R-05, R-06 | Cụm chính: hai person và một motorcycle nếu đủ điều kiện; thuộc tính xét riêng |
-| `img_027.jpg` | Vật hình bán tải trên bệ tại nghĩa trang | R-07 | Loại tượng hình xe; không dùng hình dáng xe làm bằng chứng duy nhất |
-| `img_028.jpg` | Bán tải chở tượng ngựa, xe đỏ phía sau | R-04, R-07, R-11 | Truck, car riêng; không mở truck theo tượng ngựa |
 | `img_029.jpg` | Người, xe máy, xe đạp và thanh dài chắn chéo | R-01, R-03, R-05, R-11 | Thanh dài không thuộc biên người/xe; tính che khi chắn; xe đạp ngoài phạm vi |
-| `img_030.jpg` | Bãi xe máy nhiều lớp, người và hình quảng cáo nền | R-02, R-07, R-09 | Từng xe rõ; ignore cụm không tách được; phân biệt người thật với hình in |
-| `img_031.jpg` | Xe trên phố đêm và phản chiếu dưới đường | R-07, R-08, R-12 | Không nhân đôi theo phản chiếu; xe xa đo, thiếu sáng review |
-| `img_032.jpg` | Đám đông bên kia đường, nhiều mức che | R-05, R-09 | Từng người rõ; chỉ ignore vùng không phân biệt instance |
-| `img_033.jpg` | Ma-nơ-canh trong cửa hàng/kính | R-07 | Loại ma-nơ-canh khỏi person; không suy có người từ hình giống người |
-| `img_034.jpg` | Người băng giao lộ, xe nền, người/xe sát mép phải | R-03, R-05, R-06 | Person riêng; tách người đi xe; kiểm truncated phía phải |
 | `img_035.jpg` | Tuk-tuk chất bao tải cao, xe máy và ô tô khác | R-03, R-04, R-11 | Tuk_tuk không mở biên theo hàng nhô cao; không đổi truck chỉ vì chở hàng |
-| `img_036.jpg` | Xe tải nhỏ xanh, thùng phủ bạt | R-04, R-11 | Truck; bạt thùng thuộc kết cấu xe, khác hàng rời |
 | `img_037.jpg` | Bán tải trắng nắp thùng cao cạnh bus | R-11 | Truck cho bán tải; bus riêng; nắp thùng không làm thành van |
-| `img_038.jpg` | Tủ đồ chơi có nhiều ô tô mô hình | R-07 | Loại đồ chơi; không dùng kích thước lớn làm bằng chứng xe thật |
-| `img_039.jpg` | Xe máy, người đi bộ và người đi xe đạp | R-03, R-08, R-11 | Person vẫn xét; xe đạp ngoài phạm vi; vật xa cần đo/kiểm |
-| `img_040.jpg` | Người trên xe tiền cảnh, taxi, tuk-tuk và bus nền | R-03, R-05, R-06, R-11 | Tách người/xe; taxi là car; tuk_tuk/bus riêng; phân biệt che/cắt |
 
 Các điểm tôi đề xuất đưa ra họp nhóm trước: phạm vi xe đạp/xích lô, mức che khuất và tiêu chí ignore đám đông. Riêng `img_012`, `img_019` và `img_024` cần kiểm thêm bằng chứng về xe chủ, xe đặc biệt và thân xe rời trước khi chốt.
 
@@ -175,4 +148,4 @@ Bản đề xuất cần được kiểm lại trước khi nộp. Sau khi nộp
 | Phiên bản | Thay đổi | Cơ sở |
 |---|---|---|
 | draft-104 | Khung từ v0 và câu hỏi cần chốt | Bản nháp trước khảo sát |
-| proposal-104-v1 | Bổ sung đề xuất 8 lớp, R-01 đến R-12 và bảng tình huống 40 ảnh; chỉnh cách trình bày thành ghi chú cá nhân | Khảo sát và bản nháp có AI hỗ trợ như khai báo đầu tài liệu; chờ kiểm lại |
+| proposal-104-v1 | Bổ sung đề xuất 8 lớp, R-01 đến R-12 và bảng ca khó tiêu biểu; chỉnh cách trình bày thành ghi chú cá nhân | Khảo sát |
