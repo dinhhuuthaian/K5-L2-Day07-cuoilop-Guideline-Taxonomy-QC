@@ -1,10 +1,10 @@
 # Thông tin nhóm
 
-- Tên nhóm:
-- Mã thành viên (ba chữ số):
-- Người điều phối:
-- Người review bản cuối:
-- Commit chốt bài (điền ở kênh nộp sau khi commit):
+- Tên nhóm: CuoiLop
+- Mã thành viên (ba chữ số): 101, 102, 103, 104
+- Người điều phối: Đào Bình An
+- Người review bản cuối: Nguyễn Minh Triết
+- Commit chốt bài (điền ở kênh nộp sau khi commit): Đinh Hữu Thái An
 
 ## Kết quả tóm tắt (điền cuối bài)
 
