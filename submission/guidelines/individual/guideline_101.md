@@ -66,10 +66,6 @@ Một vật vừa bị che vừa bị cắt mép thì đánh cả hai thuộc t�
 | R-16 | Người trong ô tô kín (qua kính): không gán. Người ngồi trong xe hở (tuk-tuk, thùng bán tải, xích lô) thì gán. |
 | R-17 | Không xác định được lớp phần nhìn thấy quá ít hoặc quá lạ nên không biết là xe gì (img_033: gương và cửa trắng cận cảnh) → không gán; ghi vào `image_issues.csv`: ảnh, vùng, lý do. |
 | R-18 | Một vật = một box không vẽ hai box cho cùng một vật. Một xe có hai phần dính liền (đầu kéo + rơ-moóc, xe + sidecar) là một vật. |
-3.1 Thử quy tắc người đi xe máy trên ảnh khác (Pha 1)
-img_026: xe máy đỏ chạy ban đêm, hai người ngồi. Theo R-08 → 1 box motorcycle + 2 box person (người lái, người ngồi sau). Tổng 3 box.
-img_006: phía trước có ba xe máy gần, mỗi xe một người lái, vài xe có người ngồi sau. Mỗi xe → 1 motorcycle + số person đúng bằng số người thấy. Xe đạp phía phải → bicycle + person.
-img_021: gần camera vài xe → quy tắc R-08 như trên; vùng xe xa dày đặc → ignore_region (R-05).
 
 Kết quả: cùng quy tắc cho ra số box dự đoán được ở cả ba ảnh.
 
