@@ -77,8 +77,8 @@ def main() -> None:
             destinations.extend([member_dir, photos])
             destinations.extend(photos / image for image, codes in assign.items() if member in codes)
     for destination in destinations:
-        if destination.is_symlink():
-            die(f"Đường dẫn đầu ra không được là symlink: {rel(destination)}.")
+        if destination.is_symlink() or getattr(destination, "is_junction", lambda: False)():
+            die(f"Đường dẫn đầu ra không được là symlink/junction: {rel(destination)}.")
     if args.copy_images:
         for member in members:
             photos = WORK_DIR / member / "images"
