@@ -537,9 +537,9 @@ C535,img_040.jpg,bo_sot_thua,103|104,bus,,"[0,111,73,105]",,,Chỉ 103 vẽ bus 
 C536,img_040.jpg,iou_thap,103|104,three_wheeler,van,"[299,65,543,442]","[323,41,559,380]",0.70,IoU 0.70 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
 C537,img_040.jpg,sai_lop,103|104,car,motorcycle,"[177,78,243,171]","[178,74,234,174]",0.94,"103 gán car, 104 gán motorcycle cho cùng một vật"
 C538,img_040.jpg,sai_lop,103|104,three_wheeler,van,"[71,81,119,162]","[72,88,120,154]",0.93,"103 gán three_wheeler, 104 gán van cho cùng một vật"
-C539,img_040.jpg,sai_lop,103|104,car,motorcycle,"[19,193,941,447]","[19,144,941,496]",0.90,"103 gán car, 104 gán motorcycle cho cùng một vật"
+C539,img_040.jpg,sai_lop,103|104,car,motorcycle,"[19,193,941,447]","[19,144,940,495]",0.90,"103 gán car, 104 gán motorcycle cho cùng một vật"
 C540,img_040.jpg,sai_lop,103|104,three_wheeler,van,"[299,65,543,442]","[323,41,559,380]",0.70,"103 gán three_wheeler, 104 gán van cho cùng một vật"
 C541,img_040.jpg,sai_thuoc_tinh,103|104,car,motorcycle,"[177,78,243,171]","[178,74,234,174]",0.94,occluded_level: 103=1 vs 104=0
 C542,img_040.jpg,sai_thuoc_tinh,103|104,three_wheeler,van,"[71,81,119,162]","[72,88,120,154]",0.93,occluded_level: 103=1 vs 104=0
-C543,img_040.jpg,sai_thuoc_tinh,103|104,car,motorcycle,"[19,193,941,447]","[19,144,941,496]",0.90,occluded_level: 103=2 vs 104=0
+C543,img_040.jpg,sai_thuoc_tinh,103|104,car,motorcycle,"[19,193,941,447]","[19,144,940,495]",0.90,occluded_level: 103=2 vs 104=0
 C544,img_040.jpg,sai_thuoc_tinh,103|104,three_wheeler,van,"[299,65,543,442]","[323,41,559,380]",0.70,occluded_level: 103=2 vs 104=1

@@ -1,0 +1,219 @@
+image,quyet_dinh,thay_doi
+img_038.jpg,K5/R-06,xoá 25 box (vật không thật)
+img_003.jpg,K7 C029,đổi lớp car -> car
+img_003.jpg,K7 C030,đổi lớp car -> car
+img_005.jpg,K7 C060,đổi lớp van -> van
+img_006.jpg,K7 C089,đổi lớp bus -> car
+img_006.jpg,K7 C090,đổi lớp bicycle -> bicycle
+img_008.jpg,K7 C119,đổi lớp truck -> truck
+img_012.jpg,K7 C179,đổi lớp truck -> truck
+img_015.jpg,K7 C189,đổi lớp car -> car
+img_015.jpg,K7 C190,đổi lớp car -> car
+img_016.jpg,K7 C194,đổi lớp car -> car
+img_018.jpg,K7 C203,đổi lớp car -> car
+img_022.jpg,K7 C294,đổi lớp motorcycle -> motorcycle
+img_023.jpg,K7 C302,đổi lớp bicycle -> three_wheeler
+img_029.jpg,K7 C345,đổi lớp bicycle -> bicycle
+img_029.jpg,K7 C346,đổi lớp bicycle -> bicycle
+img_031.jpg,K7 C401,đổi lớp car -> car
+img_034.jpg,K7 C456,đổi lớp bicycle -> bicycle
+img_040.jpg,K7 C537,đổi lớp car -> car
+img_040.jpg,K7 C538,đổi lớp three_wheeler -> three_wheeler
+img_040.jpg,K7 C539,đổi lớp car -> car
+img_040.jpg,K7 C540,đổi lớp three_wheeler -> three_wheeler
+img_005.jpg,K4 C050,xoá box trùng: trùm 2 người (giữ C054)
+img_005.jpg,K4 C053,xoá box trùng: trùm cả ô tô và đuôi van (giữ C056)
+img_006.jpg,K4 C069,xoá box trùng: thiếu chân (giữ C076)
+img_008.jpg,K4 C098,xoá box trùng: chỉ đuôi xe (giữ C108)
+img_008.jpg,K4 C105,xoá box trùng: trùm 2 xe (giữ C102)
+img_010.jpg,K4 C148,xoá box trùng: trùm xe đã có box C149 (giữ C146)
+img_021.jpg,K4 C232,xoá box trùng: chỉ nửa xe (giữ C244)
+img_021.jpg,K4 C233,xoá box trùng: chỉ đuôi xe (giữ C246)
+img_021.jpg,K4 C235,xoá box trùng: chỉ đuôi xe (giữ C248)
+img_021.jpg,K4 C237,xoá box trùng: giữ C255
+img_021.jpg,K4 C256,xoá box trùng: kéo lên cả người lái (giữ C239)
+img_021.jpg,K4 C257,xoá box trùng: kéo lên cả người lái (giữ C240)
+img_021.jpg,K4 C241,xoá box trùng: chỉ đuôi xe (giữ C247)
+img_021.jpg,K4 C243,xoá box trùng: thiếu chân (giữ C245)
+img_024.jpg,K4 C309,xoá box trùng: chỉ nửa xe (giữ C310)
+img_025.jpg,K4 C319,xoá box trùng: thiếu thân (giữ C321)
+img_030.jpg,K4 C361,xoá box trùng: chỉ đuôi xe (giữ C369)
+img_034.jpg,K4 C442,xoá box trùng: kéo lên cả người lái (giữ C451)
+img_036.jpg,K4 C471,xoá box trùng: chỉ một phần xe (giữ C473)
+img_036.jpg,K4 C472,xoá box trùng: chỉ một phần xe (giữ C473)
+img_039.jpg,K4 C518,xoá box trùng: thiếu thân (giữ C522)
+img_005.jpg,K2 C065,truncated=yes
+img_005.jpg,K2 C068,truncated=yes
+img_006.jpg,K2 C093,truncated=yes
+img_008.jpg,K2 C120,truncated=yes
+img_008.jpg,K2 C122,truncated=yes
+img_012.jpg,K2 C180,truncated=no
+img_030.jpg,K2 C381,truncated=yes
+img_031.jpg,R-08,bicycle cao 7px -> ignore_region
+img_039.jpg,R-08,person cao 13px -> ignore_region
+img_021.jpg,K6 (101),"bỏ vùng ignore [447, 244, 303, 38] vì phủ vật >= 20px"
+img_021.jpg,K6 (101),"giữ vùng ignore [844, 211, 70, 101]"
+img_024.jpg,K6 (101),"bỏ vùng ignore [241, 48, 455, 200] vì phủ vật >= 20px"
+img_025.jpg,K6 (101),"bỏ vùng ignore [859, 357, 70, 76] vì phủ vật >= 20px"
+img_025.jpg,K6 (101),"bỏ vùng ignore [157, 356, 208, 47] vì phủ vật >= 20px"
+img_025.jpg,K6 (101),"giữ vùng ignore [566, 352, 23, 17]"
+img_028.jpg,K6 (101),"giữ vùng ignore [125, 175, 359, 288]"
+img_031.jpg,K6 (101),"giữ vùng ignore [325, 354, 159, 30]"
+img_031.jpg,K6 (101),"giữ vùng ignore [707, 335, 43, 52]"
+img_003.jpg,K6 (102),"giữ vùng ignore [653, 20, 41, 65]"
+img_011.jpg,K6 (102),"bỏ vùng ignore [0, 335, 544, 70] vì phủ vật >= 20px"
+img_032.jpg,K6 (102),"bỏ vùng ignore [268, 259, 48, 98] vì phủ vật >= 20px"
+img_032.jpg,K6 (102),"giữ vùng ignore [0, 250, 40, 77]"
+img_039.jpg,K6 (102),"bỏ vùng ignore [680, 416, 18, 41] vì phủ vật >= 20px"
+img_019.jpg,K6 (103),"giữ vùng ignore [476, 83, 484, 115]"
+img_003.jpg,K6 (104),"giữ vùng ignore [341, 39, 48, 34]"
+img_003.jpg,K6 (104),"bỏ vùng ignore [646, 17, 201, 73] vì phủ vật >= 20px"
+img_019.jpg,K6 (104),"bỏ vùng ignore [0, 47, 945, 361] vì phủ vật >= 20px"
+img_001.jpg,K1 C003,"occluded_level 1 vs 0, R-16 hình học = 0 -> chọn 0"
+img_002.jpg,K1 C005,"occluded_level 2 vs 1, R-16 hình học = 0 -> chọn 1"
+img_002.jpg,K1 C006,"occluded_level 2 vs 1, R-16 hình học = 0 -> chọn 1"
+img_002.jpg,K1 C007,"occluded_level 2 vs 1, R-16 hình học = 0 -> chọn 1"
+img_002.jpg,K1 C008,"occluded_level 2 vs 3, R-16 hình học = 3 -> chọn 3"
+img_002.jpg,K1 C009,"occluded_level 1 vs 0, R-16 hình học = 0 -> chọn 0"
+img_002.jpg,K1 C010,"occluded_level 0 vs 1, R-16 hình học = 0 -> chọn 0"
+img_002.jpg,K1 C011,"occluded_level 2 vs 0, R-16 hình học = 0 -> chọn 0"
+img_003.jpg,K1 C031,"occluded_level 2 vs 1, R-16 hình học = 1 -> chọn 1"
+img_003.jpg,K1 C032,"occluded_level 1 vs 0, R-16 hình học = 0 -> chọn 0"
+img_003.jpg,K1 C033,"occluded_level 1 vs 0, R-16 hình học = 0 -> chọn 0"
+img_003.jpg,K1 C034,"occluded_level 1 vs 0, R-16 hình học = 0 -> chọn 0"
+img_003.jpg,K1 C035,"occluded_level 3 vs 2, R-16 hình học = 3 -> chọn 3"
+img_003.jpg,K1 C036,"occluded_level 1 vs 0, R-16 hình học = 0 -> chọn 0"
+img_003.jpg,K1 C037,"occluded_level 2 vs 1, R-16 hình học = 0 -> chọn 1"
+img_003.jpg,K1 C038,"occluded_level 3 vs 0, R-16 hình học = 0 -> chọn 0"
+img_003.jpg,K1 C039,"occluded_level 2 vs 1, R-16 hình học = 1 -> chọn 1"
+img_003.jpg,K1 C040,"occluded_level 2 vs 3, R-16 hình học = 0 -> chọn 2"
+img_003.jpg,K1 C041,"occluded_level 2 vs 1, R-16 hình học = 0 -> chọn 1"
+img_003.jpg,K1 C042,"occluded_level 1 vs 0, R-16 hình học = 0 -> chọn 0"
+img_003.jpg,K1 C043,"occluded_level 2 vs 1, R-16 hình học = 0 -> chọn 1"
+img_003.jpg,K1 C044,"occluded_level 2 vs 1, R-16 hình học = 0 -> chọn 1"
+img_003.jpg,K1 C045,"occluded_level 3 vs 2, R-16 hình học = 1 -> chọn 2"
+img_005.jpg,K1 C064,"occluded_level 3 vs 2, R-16 hình học = 0 -> chọn 2"
+img_005.jpg,K1 C066,"occluded_level 2 vs 3, R-16 hình học = 0 -> chọn 2"
+img_005.jpg,K1 C067,"occluded_level 2 vs 1, R-16 hình học = 2 -> chọn 2"
+img_006.jpg,K1 C091,"occluded_level 0 vs 2, R-16 hình học = 3 -> chọn 2"
+img_006.jpg,K1 C092,"occluded_level 3 vs 2, R-16 hình học = 0 -> chọn 2"
+img_006.jpg,K1 C094,"occluded_level 1 vs 0, R-16 hình học = 0 -> chọn 0"
+img_006.jpg,K1 C095,"occluded_level 3 vs 0, R-16 hình học = 0 -> chọn 0"
+img_006.jpg,K1 C096,"occluded_level 3 vs 2, R-16 hình học = 3 -> chọn 3"
+img_007.jpg,K1 C097,"occluded_level 2 vs 0, R-16 hình học = 0 -> chọn 0"
+img_008.jpg,K1 C121,"occluded_level 0 vs 1, R-16 hình học = 0 -> chọn 0"
+img_008.jpg,K1 C123,"occluded_level 2 vs 0, R-16 hình học = 0 -> chọn 0"
+img_008.jpg,K1 C124,"occluded_level 3 vs 2, R-16 hình học = 0 -> chọn 2"
+img_008.jpg,K1 C125,"occluded_level 3 vs 0, R-16 hình học = 0 -> chọn 0"
+img_008.jpg,K1 C126,"occluded_level 3 vs 0, R-16 hình học = 3 -> chọn 3"
+img_008.jpg,K1 C127,"occluded_level 0 vs 1, R-16 hình học = 0 -> chọn 0"
+img_008.jpg,K1 C128,"occluded_level 0 vs 2, R-16 hình học = 0 -> chọn 0"
+img_008.jpg,K1 C129,"occluded_level 3 vs 2, R-16 hình học = 0 -> chọn 2"
+img_008.jpg,K1 C130,"occluded_level 3 vs 2, R-16 hình học = 0 -> chọn 2"
+img_008.jpg,K1 C131,"occluded_level 2 vs 0, R-16 hình học = 1 -> chọn 2"
+img_008.jpg,K1 C132,"occluded_level 1 vs 0, R-16 hình học = 0 -> chọn 0"
+img_009.jpg,K1 C139,"occluded_level 1 vs 0, R-16 hình học = 0 -> chọn 0"
+img_009.jpg,K1 C140,"occluded_level 1 vs 0, R-16 hình học = 0 -> chọn 0"
+img_009.jpg,K1 C141,"occluded_level 0 vs 1, R-16 hình học = 0 -> chọn 0"
+img_009.jpg,K1 C142,"occluded_level 3 vs 2, R-16 hình học = 0 -> chọn 2"
+img_009.jpg,K1 C143,"occluded_level 3 vs 1, R-16 hình học = 3 -> chọn 3"
+img_009.jpg,K1 C144,"occluded_level 2 vs 1, R-16 hình học = 0 -> chọn 1"
+img_009.jpg,K1 C145,"occluded_level 0 vs 1, R-16 hình học = 0 -> chọn 0"
+img_010.jpg,K1 C152,"occluded_level 2 vs 1, R-16 hình học = 0 -> chọn 1"
+img_010.jpg,K1 C153,"occluded_level 1 vs 0, R-16 hình học = 0 -> chọn 0"
+img_010.jpg,K1 C154,"occluded_level 2 vs 0, R-16 hình học = 0 -> chọn 0"
+img_011.jpg,K1 C176,"occluded_level 2 vs 1, R-16 hình học = 0 -> chọn 1"
+img_011.jpg,K1 C177,"occluded_level 2 vs 1, R-16 hình học = 0 -> chọn 1"
+img_012.jpg,K1 C181,"occluded_level 2 vs 1, R-16 hình học = 0 -> chọn 1"
+img_013.jpg,K1 C183,"occluded_level 1 vs 0, R-16 hình học = 0 -> chọn 0"
+img_013.jpg,K1 C184,"occluded_level 2 vs 1, R-16 hình học = 0 -> chọn 1"
+img_013.jpg,K1 C185,"occluded_level 2 vs 1, R-16 hình học = 0 -> chọn 1"
+img_013.jpg,K1 C186,"occluded_level 3 vs 0, R-16 hình học = 0 -> chọn 0"
+img_016.jpg,K1 C195,"occluded_level 2 vs 0, R-16 hình học = 1 -> chọn 2"
+img_016.jpg,K1 C196,"occluded_level 2 vs 0, R-16 hình học = 0 -> chọn 0"
+img_016.jpg,K1 C197,"occluded_level 2 vs 0, R-16 hình học = 0 -> chọn 0"
+img_016.jpg,K1 C198,"occluded_level 2 vs 0, R-16 hình học = 0 -> chọn 0"
+img_016.jpg,K1 C199,"occluded_level 3 vs 2, R-16 hình học = 0 -> chọn 2"
+img_018.jpg,K1 C204,"occluded_level 2 vs 1, R-16 hình học = 1 -> chọn 1"
+img_018.jpg,K1 C205,"occluded_level 2 vs 0, R-16 hình học = 0 -> chọn 0"
+img_018.jpg,K1 C206,"occluded_level 1 vs 0, R-16 hình học = 0 -> chọn 0"
+img_018.jpg,K1 C207,"occluded_level 1 vs 0, R-16 hình học = 0 -> chọn 0"
+img_021.jpg,K1 C275,"occluded_level 0 vs 2, R-16 hình học = 0 -> chọn 0"
+img_021.jpg,K1 C276,"occluded_level 0 vs 1, R-16 hình học = 0 -> chọn 0"
+img_021.jpg,K1 C277,"occluded_level 0 vs 1, R-16 hình học = 0 -> chọn 0"
+img_021.jpg,K1 C278,"occluded_level 0 vs 1, R-16 hình học = 0 -> chọn 0"
+img_021.jpg,K1 C279,"occluded_level 0 vs 2, R-16 hình học = 0 -> chọn 0"
+img_021.jpg,K1 C280,"occluded_level 0 vs 1, R-16 hình học = 0 -> chọn 0"
+img_021.jpg,K1 C281,"occluded_level 0 vs 1, R-16 hình học = 2 -> chọn 1"
+img_021.jpg,K1 C282,"occluded_level 0 vs 1, R-16 hình học = 0 -> chọn 0"
+img_021.jpg,K1 C283,"occluded_level 0 vs 1, R-16 hình học = 0 -> chọn 0"
+img_021.jpg,K1 C284,"occluded_level 0 vs 1, R-16 hình học = 0 -> chọn 0"
+img_021.jpg,K1 C285,"occluded_level 2 vs 1, R-16 hình học = 0 -> chọn 1"
+img_021.jpg,K1 C286,"occluded_level 0 vs 1, R-16 hình học = 0 -> chọn 0"
+img_021.jpg,K1 C287,"occluded_level 0 vs 1, R-16 hình học = 0 -> chọn 0"
+img_021.jpg,K1 C288,"occluded_level 0 vs 1, R-16 hình học = 3 -> chọn 1"
+img_021.jpg,K1 C289,"occluded_level 0 vs 2, R-16 hình học = 0 -> chọn 0"
+img_021.jpg,K1 C290,"occluded_level 0 vs 1, R-16 hình học = 0 -> chọn 0"
+img_021.jpg,K1 C291,"occluded_level 0 vs 2, R-16 hình học = 0 -> chọn 0"
+img_021.jpg,K1 C292,"occluded_level 0 vs 2, R-16 hình học = 2 -> chọn 2"
+img_023.jpg,K1 C303,"occluded_level 2 vs 0, R-16 hình học = 0 -> chọn 0"
+img_023.jpg,K1 C304,"occluded_level 2 vs 0, R-16 hình học = 0 -> chọn 0"
+img_023.jpg,K1 C305,"occluded_level 2 vs 0, R-16 hình học = 0 -> chọn 0"
+img_023.jpg,K1 C306,"occluded_level 2 vs 1, R-16 hình học = 0 -> chọn 1"
+img_023.jpg,K1 C307,"occluded_level 1 vs 0, R-16 hình học = 0 -> chọn 0"
+img_024.jpg,K1 C311,"occluded_level 3 vs 2, R-16 hình học = 1 -> chọn 2"
+img_024.jpg,K1 C312,"occluded_level 2 vs 1, R-16 hình học = 0 -> chọn 1"
+img_025.jpg,K1 C328,"occluded_level 3 vs 2, R-16 hình học = 0 -> chọn 2"
+img_025.jpg,K1 C329,"occluded_level 3 vs 1, R-16 hình học = 0 -> chọn 1"
+img_025.jpg,K1 C330,"occluded_level 2 vs 1, R-16 hình học = 1 -> chọn 1"
+img_025.jpg,K1 C331,"occluded_level 0 vs 2, R-16 hình học = 0 -> chọn 0"
+img_025.jpg,K1 C332,"occluded_level 0 vs 3, R-16 hình học = 0 -> chọn 0"
+img_025.jpg,K1 C333,"occluded_level 3 vs 2, R-16 hình học = 1 -> chọn 2"
+img_025.jpg,K1 C334,"occluded_level 3 vs 1, R-16 hình học = 0 -> chọn 1"
+img_026.jpg,K1 C335,"occluded_level 2 vs 0, R-16 hình học = 0 -> chọn 0"
+img_026.jpg,K1 C336,"occluded_level 1 vs 2, R-16 hình học = 0 -> chọn 1"
+img_028.jpg,K1 C338,"occluded_level 0 vs 2, R-16 hình học = 2 -> chọn 2"
+img_029.jpg,K1 C347,"occluded_level 1 vs 0, R-16 hình học = 0 -> chọn 0"
+img_029.jpg,K1 C348,"occluded_level 1 vs 0, R-16 hình học = 0 -> chọn 0"
+img_029.jpg,K1 C349,"occluded_level 2 vs 0, R-16 hình học = 0 -> chọn 0"
+img_029.jpg,K1 C350,"occluded_level 2 vs 0, R-16 hình học = 0 -> chọn 0"
+img_029.jpg,K1 C351,"occluded_level 1 vs 0, R-16 hình học = 0 -> chọn 0"
+img_029.jpg,K1 C352,"occluded_level 2 vs 0, R-16 hình học = 0 -> chọn 0"
+img_029.jpg,K1 C353,"occluded_level 2 vs 1, R-16 hình học = 0 -> chọn 1"
+img_030.jpg,K1 C379,"occluded_level 2 vs 1, R-16 hình học = 0 -> chọn 1"
+img_030.jpg,K1 C380,"occluded_level 2 vs 0, R-16 hình học = 0 -> chọn 0"
+img_030.jpg,K1 C382,"occluded_level 2 vs 1, R-16 hình học = 1 -> chọn 1"
+img_030.jpg,K1 C383,"occluded_level 2 vs 1, R-16 hình học = 3 -> chọn 2"
+img_030.jpg,K1 C384,"occluded_level 2 vs 1, R-16 hình học = 0 -> chọn 1"
+img_030.jpg,K1 C385,"occluded_level 2 vs 1, R-16 hình học = 0 -> chọn 1"
+img_030.jpg,K1 C386,"occluded_level 3 vs 2, R-16 hình học = 2 -> chọn 2"
+img_030.jpg,K1 C387,"occluded_level 0 vs 2, R-16 hình học = 0 -> chọn 0"
+img_031.jpg,K1 C402,"occluded_level 0 vs 1, R-16 hình học = 0 -> chọn 0"
+img_031.jpg,K1 C403,"occluded_level 3 vs 1, R-16 hình học = 0 -> chọn 1"
+img_031.jpg,K1 C404,"occluded_level 0 vs 2, R-16 hình học = 2 -> chọn 2"
+img_032.jpg,K1 C434,"occluded_level 1 vs 0, R-16 hình học = 0 -> chọn 0"
+img_032.jpg,K1 C435,"occluded_level 1 vs 0, R-16 hình học = 0 -> chọn 0"
+img_032.jpg,K1 C436,"occluded_level 1 vs 0, R-16 hình học = 0 -> chọn 0"
+img_032.jpg,K1 C437,"occluded_level 2 vs 1, R-16 hình học = 0 -> chọn 1"
+img_032.jpg,K1 C438,"occluded_level 2 vs 1, R-16 hình học = 1 -> chọn 1"
+img_032.jpg,K1 C439,"occluded_level 2 vs 0, R-16 hình học = 0 -> chọn 0"
+img_034.jpg,K1 C457,"occluded_level 1 vs 0, R-16 hình học = 0 -> chọn 0"
+img_034.jpg,K1 C458,"occluded_level 1 vs 0, R-16 hình học = 0 -> chọn 0"
+img_035.jpg,K1 C467,"occluded_level 1 vs 0, R-16 hình học = 0 -> chọn 0"
+img_035.jpg,K1 C468,"occluded_level 1 vs 0, R-16 hình học = 0 -> chọn 0"
+img_035.jpg,K1 C469,"occluded_level 2 vs 1, R-16 hình học = 0 -> chọn 1"
+img_035.jpg,K1 C470,"occluded_level 2 vs 1, R-16 hình học = 1 -> chọn 1"
+img_036.jpg,K1 C479,"occluded_level 2 vs 1, R-16 hình học = 0 -> chọn 1"
+img_036.jpg,K1 C480,"occluded_level 2 vs 0, R-16 hình học = 0 -> chọn 0"
+img_036.jpg,K1 C481,"occluded_level 2 vs 1, R-16 hình học = 1 -> chọn 1"
+img_037.jpg,K1 C483,"occluded_level 0 vs 2, R-16 hình học = 0 -> chọn 0"
+img_037.jpg,K1 C484,"occluded_level 0 vs 3, R-16 hình học = 0 -> chọn 0"
+img_039.jpg,K1 C532,"occluded_level 0 vs 1, R-16 hình học = 0 -> chọn 0"
+img_039.jpg,K1 C533,"occluded_level 0 vs 1, R-16 hình học = 0 -> chọn 0"
+img_040.jpg,K1 C541,"occluded_level 1 vs 0, R-16 hình học = 0 -> chọn 0"
+img_040.jpg,K1 C542,"occluded_level 1 vs 0, R-16 hình học = 0 -> chọn 0"
+img_040.jpg,K1 C543,"occluded_level 2 vs 0, R-16 hình học = 0 -> chọn 0"
+img_040.jpg,K1 C544,"occluded_level 2 vs 1, R-16 hình học = 0 -> chọn 1"
+img_005.jpg,K8 C059,person occluded_level=3 (R-17)
+img_005.jpg,K8 C058,person occluded_level=3 (R-17)
+(cả lô),K1/R-16,"nháp -> chốt: 0->0: 79, 0->1: 2, 0->2: 6, 0->3: 1, 1->1: 37, 1->2: 2, 1->3: 1, 2->2: 14, 2->3: 3"

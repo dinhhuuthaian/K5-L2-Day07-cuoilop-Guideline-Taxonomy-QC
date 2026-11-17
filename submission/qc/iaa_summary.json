@@ -18,7 +18,7 @@
     "submission/labels/101.json": "a8ace039664cbb3d1c5a09fc0936ef1ef71c23576184ce1233d60492ba8aaf11",
     "submission/labels/102.json": "6a791dd567d33889a2d7dd0e255a0baa017b60cbb0616e4238dc46fb12098a70",
     "submission/labels/103.json": "ad20a42488467e9d3569300cf76b2461ee4219ffb80b067947ae33625ac130e7",
-    "submission/labels/104.json": "a9f08148788d3b1f94e3f21e6534909978a2c00e1c87a3384d7958b477b72989",
+    "submission/labels/104.json": "83167b88e8ec516e4ad33d979150e830f6df144b6b07325832f794fd1d45d1cf",
     "data/images/img_001.jpg": "74b15d37b53d99d6cb8b3f7648d064ff89fedf0662df5ca1594c2c9c8454ba88",
     "data/images/img_002.jpg": "7cfa98eb24c504aa15496a82a714e28cc318447d77d0cb3881f91d649374d3de",
     "data/images/img_003.jpg": "8c2682682b89753bfa9de78b9dea93abb91937d2baed53fbf8c9fce6aa6a604a",
@@ -61,9 +61,9 @@
     "data/images/img_040.jpg": "e16ee9a3cfe6ea33457e7562b7f7d5bea9f63eee5cce42180ba25282dc004e95"
   },
   "artifacts": {
-    "consensus_draft.json": "865751840c0338341f3e23bbb749bf16240a9aa7dc75a6acb0688779e9cb1bf7",
+    "consensus_draft.json": "4ce53ddd9c98b5c544e2739eb23bbffb665f08d82853562b0044ffda1d5b8376",
     "flagged_images.txt": "e2043e663b2382e5b009f74d7b00aa313596f50eae4852b76e96d5208c1b8a02",
-    "calibration_candidates.csv": "6409db584aab05718e671230c4896a83cbd1fadcf45294524fce7c041c26dc1a"
+    "calibration_candidates.csv": "715984e5d4c91085a75cf083e2d5d017038be73ec8f25526ea7b7a193ced1594"
   },
   "overall": {
     "n_images": 40,
@@ -71,7 +71,7 @@
     "n_unmatched_a": 91,
     "n_unmatched_b": 122,
     "n_skipped_in_ignore": 0,
-    "mean_iou": 0.8252712864315254,
+    "mean_iou": 0.8252560026944767,
     "class_agreement": 0.9324324324324325,
     "attr_agreement": {
       "occluded_level": 0.5101351351351351,
@@ -174,7 +174,7 @@
       "n_unmatched_a": 21,
       "n_unmatched_b": 31,
       "n_skipped_in_ignore": 0,
-      "mean_iou": 0.8401795896896284,
+      "mean_iou": 0.8400055902216906,
       "class_agreement": 0.7692307692307693,
       "attr_agreement": {
         "occluded_level": 0.5769230769230769,
