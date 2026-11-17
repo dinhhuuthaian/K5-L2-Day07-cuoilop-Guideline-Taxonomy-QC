@@ -1,0 +1,69 @@
+{
+  "phien_ban_guideline": "v1.1",
+  "groups": {
+    "K1": {
+      "ten": "Lệch occluded_level",
+      "quyet_dinh": "Chấm lại occluded_level theo cách ước lượng R-16 (v1.1): chia vật thành 4 phần bằng nhau, đếm phần bị vật KHÁC che; phần người bị chính chiếc xe họ đang lái/ngồi che và phần xe bị người lái che không tính là che",
+      "quy_tac": "R-16",
+      "pham_vi": "lo",
+      "hanh_dong": "chấm lại occluded_level"
+    },
+    "K2": {
+      "ten": "Lệch truncated",
+      "quyet_dinh": "Chấm lại truncated theo R-10: yes chỉ khi mép ảnh cắt mất >= 10% thân vật; box chạm mép nhưng vật gần đủ là no",
+      "quy_tac": "R-10",
+      "pham_vi": "anh",
+      "hanh_dong": "chấm lại truncated"
+    },
+    "K3": {
+      "ten": "IoU thấp (box lệch/lỏng/thiếu phần)",
+      "quyet_dinh": "Vẽ lại box ôm sát phần nhìn thấy theo R-01: người gồm mũ, tay, chân đặt trên xe; xe gồm gương, tay lái; không gồm hàng rời, bóng, vệt mờ; không đoán phần bị che",
+      "quy_tac": "R-01",
+      "pham_vi": "anh",
+      "hanh_dong": "vẽ lại box"
+    },
+    "K4": {
+      "ten": "Bỏ sót / thừa box (ngoài img_038)",
+      "quyet_dinh": "Giữ hoặc thêm box nếu là người/xe thật, cao >= 20 px trên ảnh gốc và tách được ranh giới (R-08, R-09); xoá nếu là vật không gán theo R-04/R-06/R-07 hoặc cao < 20 px",
+      "quy_tac": "R-08, R-09",
+      "pham_vi": "anh",
+      "hanh_dong": "thêm/xoá box"
+    },
+    "K5": {
+      "ten": "Gán nhầm đồ chơi (img_038)",
+      "quyet_dinh": "Xoá box: ô tô đồ chơi trong tủ kính là vật không thật, không gán theo R-06 (một người lệch quy tắc, guideline đã rõ)",
+      "quy_tac": "R-06",
+      "pham_vi": "anh",
+      "hanh_dong": "xoá box"
+    },
+    "K6": {
+      "ten": "Bất đồng ignore_region",
+      "quyet_dinh": "ignore_region chỉ phủ vật cao < 20 px hoặc cụm >= 3 vật chồng nhau không tách được ở 200%; vật >= 20 px tách được phải có box riêng và nằm ngoài vùng ignore; ảnh chỉ có phản chiếu/vật giả không vẽ ignore",
+      "quy_tac": "R-08, R-09",
+      "pham_vi": "lo",
+      "hanh_dong": "thu hẹp/xoá/thêm ignore_region"
+    },
+    "K7": {
+      "ten": "Sai lớp",
+      "quyet_dinh": "Chốt lớp {lop_chot} theo trục phân loại mục 2.1 (động cơ -> số bánh -> cấu trúc thân xe)",
+      "quy_tac": "2.1",
+      "pham_vi": "anh",
+      "hanh_dong": "đổi lớp thành {lop_chot}",
+      "can_review_sheet": true
+    },
+    "K8": {
+      "ten": "can_review: người chỉ lộ đầu/mũ bảo hiểm",
+      "quyet_dinh": "Mũ bảo hiểm đang đội trên đầu ở vị trí người đứng/ngồi trên xe là person, occluded_level 3, box ôm phần nhìn thấy (R-17); mũ rời không gán",
+      "quy_tac": "R-17",
+      "pham_vi": "anh",
+      "hanh_dong": "giữ person, occluded_level=3, bỏ can_review"
+    },
+    "K9": {
+      "ten": "can_review: hàng hoá trên xe",
+      "quyet_dinh": "Box xe chỉ ôm thân xe và bộ phận gắn cố định, không mở theo hàng rời chất trên nóc (R-05)",
+      "quy_tac": "R-05",
+      "pham_vi": "anh",
+      "hanh_dong": "thu box về thân xe, bỏ can_review"
+    }
+  }
+}
