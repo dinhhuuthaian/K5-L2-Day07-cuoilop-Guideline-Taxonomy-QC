@@ -11,7 +11,7 @@ C190,img_015.jpg,101|102,car,truck,"[0,117,57,64]","[0,89,57,92]",,car, dây là
 C194,img_016.jpg,103|104,car,van,"[413,301,208,125]","[421,305,188,118]",three_wheeler nếu là tuk-tuk; van nếu là xe thân hộp (v1.0: img_016),car,104 yêu cầu chọn lớp của 103 (car); chưa xác nhận kiểm lại trên ảnh.
 C203,img_018.jpg,101|103,truck,car,"[170,496,199,166]","[169,490,201,182]",, car, 2 ô nằm gần nhau nên báo lỗi
 C294,img_022.jpg,102|104,motorcycle,three_wheeler,"[484,480,206,143]","[485,467,210,154]",motorcycle nếu là mô tô sidecar (v1.0 R-02),motorcycle,104 yêu cầu chọn lớp của 102 (motorcycle); chưa xác nhận kiểm lại trên ảnh.
-C302,img_023.jpg,102|104,three_wheeler,bicycle,"[567,189,226,344]","[574,183,227,337]",bicycle nếu là xích lô (v1.0: img_023 → bicycle),three_wheeler,104 yêu cầu chọn lớp của 102 (three_wheeler); chưa xác nhận kiểm lại trên ảnh.
+C302,img_023.jpg,102|104,three_wheeler,bicycle,"[567,189,226,344]","[574,183,227,337]",bicycle nếu là xích lô (v1.0: img_023 → bicycle),bicycle,104 yêu cầu chọn lớp của 102 (three_wheeler); chưa xác nhận kiểm lại trên ảnh.
 C345,img_029.jpg,102|104,bicycle,motorcycle,"[214,223,26,56]","[211,222,31,51]",,bicycle,104 yêu cầu chọn lớp của 102 (bicycle); chưa xác nhận kiểm lại trên ảnh.
 C346,img_029.jpg,102|104,bicycle,motorcycle,"[118,222,27,66]","[114,221,29,66]",,bicycle,104 yêu cầu chọn lớp của 102 (bicycle); chưa xác nhận kiểm lại trên ảnh.
 C401,img_031.jpg,101|103,car,motorcycle,"[407,380,17,39]","[404,377,23,43]",,car, 2 ô bị chèn lên nhau nên báo lỗi

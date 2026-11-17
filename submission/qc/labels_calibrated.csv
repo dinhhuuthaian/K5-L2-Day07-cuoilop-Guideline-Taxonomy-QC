@@ -273,7 +273,7 @@ img_023.jpg,person,749.12,164.19,31.9,65.62,1,no,calibration
 img_023.jpg,car,36.72,153.65,394.32,253.86,0,no,calibration
 img_023.jpg,car,790.77,175.34,35.77,29.52,1,no,calibration
 img_023.jpg,motorcycle,508.13,211.85,39.96,60.46,0,no,calibration
-img_023.jpg,three_wheeler,570.06,185.81,226.57,340.12,0,no,calibration
+img_023.jpg,bicycle,570.06,185.81,226.57,340.12,0,no,calibration
 img_023.jpg,bicycle,818.65,191.71,59.38,45.47,0,no,calibration
 img_024.jpg,car,73.73,228.22,763.73,467.07,0,no,calibration
 img_024.jpg,car,0.0,195.71,239.11,239.68,2,yes,calibration
